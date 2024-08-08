@@ -100,9 +100,17 @@ footer {
     color: white;
 }
 
+.element {
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis */
+}
+
 /* Media Queries for Responsive Design */
 
-/* Small devices (phones, 600px and down) */
 @media (max-width: 37.5em) { /* 600px */
     .navbar {
         flex-direction: column;
@@ -114,12 +122,23 @@ footer {
     }
 
     .top-right-image {
-        top: 5%;
-        right: 5%;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .top-right-image img {
         width: 50vw;
+    }
+
+    .top-right-image p {
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -142,6 +161,12 @@ footer {
     .top-right-image img {
         width: 40vw;
     }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* Large devices (desktops, 992px and down) */
@@ -162,5 +187,11 @@ footer {
 
     .top-right-image img {
         width: 30vw;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
