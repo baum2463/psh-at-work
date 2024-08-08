@@ -99,3 +99,68 @@ footer {
     margin-top: 0.5em;
     color: white;
 }
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 37.5em) { /* 600px */
+    .navbar {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .navbar a, .dropbtn {
+        padding: 1em;
+    }
+
+    .top-right-image {
+        top: 5%;
+        right: 5%;
+    }
+
+    .top-right-image img {
+        width: 50vw;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 48em) { /* 768px */
+    .navbar {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .navbar a, .dropbtn {
+        padding: 1em;
+    }
+
+    .top-right-image {
+        top: 7%;
+        right: 5%;
+    }
+
+    .top-right-image img {
+        width: 40vw;
+    }
+}
+
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 62em) { /* 992px */
+    .navbar {
+        flex-direction: row;
+        padding: 0.625em;
+    }
+
+    .navbar a, .dropbtn {
+        padding: 0.875em 1.25em;
+    }
+
+    .top-right-image {
+        top: 10%;
+        right: 3%;
+    }
+
+    .top-right-image img {
+        width: 30vw;
+    }
+}
