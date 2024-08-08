@@ -142,11 +142,13 @@ footer {
     }
 
     .top-right-image img {
-        width: 50vw;
+        width: 70vw;
     }
 
     .top-right-image p {
         text-align: center;
+        font-size: 1.2em; /* Increase font size for better visibility */
+
     }
 
     .content {
@@ -173,7 +175,11 @@ footer {
     }
 
     .top-right-image img {
-        width: 40vw;
+        width: 70vw;
+    }
+
+    .top-right-image p {
+        font-size: 1.2em; /* Increase font size for better visibility */
     }
 
     .content {
