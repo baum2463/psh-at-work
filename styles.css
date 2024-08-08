@@ -115,13 +115,13 @@ footer {
 /* Media Queries for Responsive Design */
 @media (max-width: 37.5em) { /* 600px */
     .impressum {
-        font-size: 0.75em; /* Smaller font size for small devices */
+        font-size: 0.5em; /* Smaller font size for small devices */
     }
 }
 
 @media (max-width: 48em) { /* 768px */
     .impressum {
-        font-size: 0.85em; /* Slightly larger font size for medium devices */
+        font-size: 0.6em; /* Slightly larger font size for medium devices */
     }
 }
 
