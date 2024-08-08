@@ -70,6 +70,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 4em; /* Fixed height */
+    overflow: hidden; /* Hide overflow content */
 }
 
 .impressum {
@@ -79,6 +81,7 @@ footer {
     gap: 1em;
     margin: 0 auto;
     max-width: 800px;
+    font-size: 1em; /* Default font size */
 }
 
 .top-right-image {
@@ -110,6 +113,17 @@ footer {
 }
 
 /* Media Queries for Responsive Design */
+@media (max-width: 37.5em) { /* 600px */
+    .impressum {
+        font-size: 0.75em; /* Smaller font size for small devices */
+    }
+}
+
+@media (max-width: 48em) { /* 768px */
+    .impressum {
+        font-size: 0.85em; /* Slightly larger font size for medium devices */
+    }
+}
 
 @media (max-width: 37.5em) { /* 600px */
     .navbar {
