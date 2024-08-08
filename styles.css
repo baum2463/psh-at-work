@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Hintergrundbild */
+    background-size: cover; /* Bild skaliert, um den gesamten Viewport zu bedecken */
+    background-position: center;
+    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensures all items are vertically centered */
+    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+    padding: 0.625em; /* 10px */
+}
+
+.navbar a, .dropbtn {
+    color: white;
+    padding: 0.875em 1.25em; /* 14px 20px */
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar a:hover, .dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Hover-Effekt */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; /* Aligns the dropdown with other nav items */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+    min-width: 10em; /* 160px */
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2); /* 0px 8px 16px 0px */
+    z-index: 1;
+    margin-top: 0.8em; /* Adds space below the button */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.75em 1em; /* 12px 16px */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Hover-Effekt */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.impressum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.top-right-image {
+    position: fixed;
+    top: 10%;
+    right: 3%;
+    text-align: center;
+}
+
+.top-right-image img {
+    width: 25vw; /* 20% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    border: 0.25em solid white; /* Adds a white border around the image */
+    border-radius: 0.5em; /* Optional: adds rounded corners to the border */
+}
+
+.top-right-image p {
+    margin-top: 0.5em;
+    color: white;
+}
