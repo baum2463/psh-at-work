@@ -124,6 +124,10 @@ footer {
         height: auto; /* Allow height to adjust */
     }
 
+    .logo h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
     .main-nav {
         justify-content: flex-start;
     }
