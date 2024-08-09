@@ -7,27 +7,6 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-header, .main-nav, .contact-info, .hero, .introduction, .news, .partners, footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-}
-
-.main-nav ul {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.main-nav li {
-    margin: 0.5em; /* Add some spacing between items */
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -35,6 +14,7 @@ header {
     background-color: #333;
     color: white;
     padding: 1em;
+    height: calc(6.25em + 2em); /* Slightly more than the logo height */
 }
 
 .logo {
@@ -51,15 +31,29 @@ header {
     margin: 0;
 }
 
+.main-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 .main-nav ul {
     list-style: none;
     display: flex;
     gap: 1em; /* 16px */
+    padding: 0;
+    margin: 0;
 }
 
 .main-nav a {
     color: white;
     text-decoration: none;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-left: 1em; /* 16px */
 }
 
 .contact-info a {
@@ -127,18 +121,15 @@ footer {
     header {
         flex-direction: column;
         align-items: flex-start;
+        height: auto; /* Allow height to adjust */
     }
-    header, .main-nav, .contact-info, .hero, .introduction, .news, .partners, footer {
-        flex-direction: column;
-        align-items: flex-start;
+
+    .main-nav {
+        justify-content: flex-start;
     }
 
     .main-nav ul {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .main-nav ul {
         gap: 0.5em; /* 8px */
     }
 
@@ -146,16 +137,7 @@ footer {
         margin-top: 1em; /* 16px */
     }
 
-    .cta-button {
-        padding: 0.75em; /* 12px */
-        margin: 0.25em; /* 4px */
-    }
-
-    .introduction, .news, .partners {
-        padding: 1em; /* 16px */
-    }
-
-    footer {
+    .introduction, .news, .partners, footer {
         padding: 1em; /* 16px */
     }
 
@@ -170,19 +152,7 @@ footer {
         gap: 0.75em; /* 12px */
     }
 
-    .cta-button {
-        padding: 0.875em; /* 14px */
-        margin: 0.375em; /* 6px */
-    }
-        .contact-info {
-        margin-top: 0;
-    }
-
-    .introduction, .news, .partners {
-        padding: 1.5em; /* 24px */
-    }
-
-    footer {
+    .introduction, .news, .partners, footer {
         padding: 1.5em; /* 24px */
     }
 
@@ -190,9 +160,10 @@ footer {
         gap: 0.75em; /* 12px */
     }
 }
+
 @media (min-width: 1025px) {
     header {
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .logo {
