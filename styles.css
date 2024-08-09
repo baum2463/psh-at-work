@@ -1,7 +1,9 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 1em; /* 16px */
 }
 
 header {
@@ -19,18 +21,18 @@ header {
 }
 
 .logo img {
-    height: 100px; /* Increase the height of the logo */
-    margin-right: 1em; /* Add some space between the logo and the heading */
+    height: 6.25em; /* 100px */
+    margin-right: 1em; /* 16px */
 }
 
 .logo h1 {
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
-    gap: 1em;
+    gap: 1em; /* 16px */
 }
 
 .main-nav a {
@@ -40,7 +42,7 @@ header {
 
 .contact-info a {
     color: white;
-    margin-left: 1em;
+    margin-left: 1em; /* 16px */
 }
 
 .hero {
@@ -66,18 +68,18 @@ header {
     color: white;
     padding: 1em;
     text-decoration: none;
-    margin: 0.5em;
+    margin: 0.5em; /* 8px */
 }
 
 .introduction, .news, .partners {
-    padding: 2em;
+    padding: 2em; /* 32px */
     text-align: center;
 }
 
 footer {
     background-color: #333;
     color: white;
-    padding: 2em;
+    padding: 2em; /* 32px */
     text-align: center;
 }
 
@@ -85,7 +87,7 @@ footer {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 1em; /* 16px */
 }
 
 .footer-nav a {
@@ -95,5 +97,63 @@ footer {
 
 .social-media a {
     color: white;
-    margin: 0 0.5em;
+    margin: 0 0.5em; /* 8px */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.5em; /* 8px */
+    }
+
+    .contact-info {
+        margin-top: 1em; /* 16px */
+    }
+
+    .cta-button {
+        padding: 0.75em; /* 12px */
+        margin: 0.25em; /* 4px */
+    }
+
+    .introduction, .news, .partners {
+        padding: 1em; /* 16px */
+    }
+
+    footer {
+        padding: 1em; /* 16px */
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 0.5em; /* 8px */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-nav ul {
+        gap: 0.75em; /* 12px */
+    }
+
+    .cta-button {
+        padding: 0.875em; /* 14px */
+        margin: 0.375em; /* 6px */
+    }
+
+    .introduction, .news, .partners {
+        padding: 1.5em; /* 24px */
+    }
+
+    footer {
+        padding: 1.5em; /* 24px */
+    }
+
+    .footer-nav ul {
+        gap: 0.75em; /* 12px */
+    }
 }
