@@ -139,7 +139,6 @@ footer {
     }
 
     .main-nav ul {
-        flex-direction: column;
         gap: 0.5em; /* 8px */
     }
 
@@ -175,6 +174,9 @@ footer {
         padding: 0.875em; /* 14px */
         margin: 0.375em; /* 6px */
     }
+        .contact-info {
+        margin-top: 0;
+    }
 
     .introduction, .news, .partners {
         padding: 1.5em; /* 24px */
@@ -186,5 +188,22 @@ footer {
 
     .footer-nav ul {
         gap: 0.75em; /* 12px */
+    }
+}
+@media (min-width: 1025px) {
+    header {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .main-nav {
+        margin-left: auto;
+    }
+
+    .contact-info {
+        margin-left: 1em; /* 16px */
     }
 }
