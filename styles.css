@@ -1,217 +1,99 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Hintergrundbild */
-    background-size: cover; /* Bild skaliert, um den gesamten Viewport zu bedecken */
-    background-position: center;
-    background-attachment: fixed; /* Bild bleibt fixiert beim Scrollen */
 }
 
-.navbar {
+header {
     display: flex;
-    justify-content: center;
-    align-items: center; /* Ensures all items are vertically centered */
-    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
-    padding: 0.625em; /* 10px */
-}
-
-.navbar a, .dropbtn {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
     color: white;
-    padding: 0.875em 1.25em; /* 14px 20px */
+    padding: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px; /* Increase the height of the logo */
+    margin-right: 1em; /* Add some space between the logo and the heading */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.main-nav a {
+    color: white;
     text-decoration: none;
-    text-align: center;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }
 
-.navbar a:hover, .dropbtn:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Hover-Effekt */
+.contact-info a {
+    color: white;
+    margin-left: 1em;
 }
 
-.dropdown {
+.hero {
     position: relative;
-    display: inline-block;
-    vertical-align: middle; /* Aligns the dropdown with other nav items */
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
-    min-width: 10em; /* 160px */
-    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2); /* 0px 8px 16px 0px */
-    z-index: 1;
-    margin-top: 0.8em; /* Adds space below the button */
-}
-
-.dropdown-content a {
+    text-align: center;
     color: white;
-    padding: 0.75em 1em; /* 12px 16px */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 1em;
     text-decoration: none;
-    display: block;
-    text-align: left;
+    margin: 0.5em;
 }
 
-.dropdown-content a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Hover-Effekt */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.introduction, .news, .partners {
+    padding: 2em;
+    text-align: center;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+    background-color: #333;
     color: white;
+    padding: 2em;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: 4em; /* Fixed height */
-    overflow: hidden; /* Hide overflow content */
 }
 
-.impressum {
+.footer-nav ul {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
-    margin: 0 auto;
-    max-width: 800px;
-    font-size: 1em; /* Default font size */
 }
 
-.top-right-image {
-    position: fixed;
-    top: 10%;
-    right: 3%;
-    text-align: center;
-}
-
-.top-right-image img {
-    width: 25vw; /* 20% of the viewport width */
-    height: auto; /* Maintain aspect ratio */
-    border: 0.25em solid white; /* Adds a white border around the image */
-    border-radius: 0.5em; /* Optional: adds rounded corners to the border */
-}
-
-.top-right-image p {
-    margin-top: 0.5em;
+.footer-nav a {
     color: white;
+    text-decoration: none;
 }
 
-.element {
-    background-color: lightgray;
-    border: 1px solid #ccc;
-    padding: 1em;
-    margin: 0.5em;
-    text-align: center;
-    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis */
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 37.5em) { /* 600px */
-    .impressum {
-        font-size: 0.5em; /* Smaller font size for small devices */
-    }
-}
-
-@media (max-width: 48em) { /* 768px */
-    .impressum {
-        font-size: 0.6em; /* Slightly larger font size for medium devices */
-    }
-}
-
-@media (max-width: 37.5em) { /* 600px */
-    .navbar {
-        flex-direction: column;
-        padding: 1em;
-    }
-
-    .navbar a, .dropbtn {
-        padding: 1em;
-    }
-
-    .top-right-image {
-        position: static;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .top-right-image img {
-        width: 70vw;
-    }
-
-    .top-right-image p {
-        text-align: center;
-        font-size: 1.2em; /* Increase font size for better visibility */
-
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Medium devices (tablets, 768px and down) */
-@media (max-width: 48em) { /* 768px */
-    .navbar {
-        flex-direction: column;
-        padding: 1em;
-    }
-
-    .navbar a, .dropbtn {
-        padding: 1em;
-    }
-
-    .top-right-image {
-        top: 7%;
-        right: 5%;
-    }
-
-    .top-right-image img {
-        width: 70vw;
-    }
-
-    .top-right-image p {
-        font-size: 1.2em; /* Increase font size for better visibility */
-    }
-
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-/* Large devices (desktops, 992px and down) */
-@media (max-width: 62em) { /* 992px */
-    .navbar {
-        flex-direction: row;
-        padding: 0.625em;
-    }
-
-    .navbar a, .dropbtn {
-        padding: 0.875em 1.25em;
-    }
-
-    .top-right-image {
-        top: 10%;
-        right: 3%;
-    }
-
-    .top-right-image img {
-        width: 30vw;
-    }
-
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+.social-media a {
+    color: white;
+    margin: 0 0.5em;
 }
