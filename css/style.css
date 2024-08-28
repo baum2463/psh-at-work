@@ -224,7 +224,7 @@ header .navbar {
    Home page style
    ================= */
 #banner {
-  background: url('https://drive.google.com/thumbnail?id=1rKjboF24EtdBZqN_bY4M71Uzlcf6s9km');
+  background: url('../img/dogs.jpg');
   background-size: cover;
   padding: 250px 0;
   position: relative;
@@ -306,6 +306,11 @@ header .navbar {
   -o-animation: wiggle 0.5s linear 0s infinite alternate;
   animation: wiggle 0.5s linear 0s infinite alternate;
 }
+
+#socialmedia {
+  padding: 100px 0;
+}
+
 #features {
   padding: 100px 0 0;
 }
@@ -342,7 +347,7 @@ header .navbar {
   margin-top: 40px;
 }
 #counter {
-  background: url(../img/counter-bg.jpg) no-repeat;
+  background: url(../img/beach.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -767,80 +772,7 @@ header .navbar {
 #team .team-overlay .media a:hover {
   color: #EEF525;
 }
-#pricing-table {
-  padding: 100px 0 127px;
-  background: #EEF525;
-}
-#pricing-table .title h2,
-#pricing-table .title p {
-  color: #fff;
-}
-#pricing-table .title h2:before, #pricing-table .title h2:after {
-  background: #fff;
-}
-#pricing-table .block {
-  color: #fff;
-}
-#pricing-table .block ul {
-  border: 1px solid #fff;
-  padding: 35px 0;
-}
-#pricing-table .block ul li {
-  padding: 10px 0;
-}
-#pricing-table .block ul li p {
-  text-transform: uppercase;
-}
-#pricing-table .block ul li:first-child {
-  margin-bottom: 26px;
-}
-#pricing-table .block ul li:first-child h4 {
-  padding-bottom: 29px;
-  font-size: 20px;
-}
-#pricing-table .block ul li:first-child p {
-  font-size: 40px;
-  line-height: 1;
-  font-weight: 600;
-}
-#pricing-table .block ul li:first-child p span {
-  font-size: 16px;
-  font-weight: 300;
-}
-#pricing-table .block ul li:last-child {
-  color: #fff;
-  margin-top: 25px;
-}
-#pricing-table .block .btn-buy {
-  border-color: #fff;
-  border-radius: 25px;
-  color: #fff;
-  font-size: 16px;
-  display: inline-block;
-  font-weight: 600;
-  transition: 0.3s;
-  background: #fff;
-  color: #EEF525;
-}
 
-
-#pricing-table .block .btn-buy {
-    opacity: 0;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-}
-#pricing-table .block:hover {
-  background:rgba(255, 255, 255, 0.17);
-}
-#pricing-table .block:hover .btn-buy {
-  opacity: 1;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-    -webkit-transform: translate3d(0, 0px, 0);
-    transform: translate3d(0, 0px, 0);
-}
 #contact-form {
   padding: 100px 0;
   background:#f9f9f9;
@@ -901,7 +833,7 @@ header .navbar {
    contact page style
    ===================== */
 #global-header {
-  background: url(../img/contact-slider-img.jpg);
+  background: url('../img/dogs.jpg');
   background-size: cover;
   background-position: center;
   padding: 150px 0 90px;
@@ -934,40 +866,90 @@ header .navbar {
   font-family: 'Lora', serif;
 }
 
-/* ================ Contact end ========================= */
+/* ================ Aktuelles ========================= */
+
 /* =====================
-   Service page style
+   kalender
    ===================== */
-#client-logo {
-  padding: 0 0 100px;
-  text-align: center;
-}
-#client-logo a {
-  padding: 14px 24px;
-  display: block;
-}
-#client-logo a img {
-  transition: 0.3s;
-  margin: 0 auto;
-}
-#client-logo a:hover img {
-  transform: scale(1.2);
-}
-footer {
-  background: #202322;
-  padding: 42px 0 65px 0;
-  text-align: center;
-}
-footer p {
-  font-size: 14px;
-  color: #fff;
-  line-height: 1;
-  padding-top: 26px;
-}
+
+   #kalender {
+    padding: 100px 0 127px;
+    background: #8b98a0;
+  }
+  #kalender .title h2,
+  #kalender .title p {
+    color: #fff;
+  }
+  #kalender .title h2:before, #kalender .title h2:after {
+    background: #fff;
+  }
+  #kalender .block {
+    color: #fff;
+  }
+  #kalender .block ul {
+    border: 1px solid #fff;
+    padding: 35px 0;
+  }
+  #kalender .block ul li {
+    padding: 10px 0;
+  }
+  #kalender .block ul li p {
+    text-transform: uppercase;
+  }
+  #kalender .block ul li:first-child {
+    margin-bottom: 26px;
+  }
+  #kalender .block ul li:first-child h4 {
+    padding-bottom: 29px;
+    font-size: 20px;
+  }
+  #kalender .block ul li:first-child p {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 600;
+  }
+  #kalender .block ul li:first-child p span {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  #kalender .block ul li:last-child {
+    color: #fff;
+    margin-top: 25px;
+  }
+  #kalender .block .btn-buy {
+    border-color: #fff;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.3s;
+    background: #fff;
+    color: #202322;
+  }
+  
+  
+  #kalender .block .btn-buy {
+      opacity: 0;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+  }
+  #kalender .block:hover {
+    background:rgba(255, 255, 255, 0.17);
+  }
+  #kalender .block:hover .btn-buy {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      -webkit-transform: translate3d(0, 0px, 0);
+      transform: translate3d(0, 0px, 0);
+  }
+
 /* =====================
    Blog Post
    ===================== */
-
 
 #blog {
   padding:100px 0;
@@ -1411,6 +1393,319 @@ footer p {
   -webkit-transition-duration: .2s;
   -webkit-transition-timing-function: ease-in-out;
 }
+
+/* =====================
+   Galerie
+   ===================== */
+#galerie {
+  padding: 100px 0;
+}
+
+#galerie {
+  padding: 100px 0 100px;
+  text-align: center;
+}
+#galerie a {
+  padding: 14px 24px;
+  display: block;
+}
+#galerie a img {
+  transition: 0.3s;
+  margin: 0 auto;
+}
+#galerie a:hover img {
+  transform: scale(1.2);
+}
+
+/* ================ Unterstützen========================= */
+
+/* =====================
+   Foerdermitgliedschaft
+   ===================== */
+#foerdermitgliedschaft {
+  padding: 100px 0;
+}
+#foerdermitgliedschaft .block .recent-work-mixMenu {
+  padding-bottom: 40px;
+  text-align: center;
+}
+#foerdermitgliedschaft .block .recent-work-mixMenu ul li {
+  display: inline-block;
+  padding: 0;
+}
+#foerdermitgliedschaft .block .recent-work-mixMenu ul li button {
+  background: none;
+  border: 0;
+  font-size: 15px;
+  color: #474747;
+  margin: 0 20px;
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+#foerdermitgliedschaft .block .recent-work-mixMenu ul li button:hover {
+  color: #EEF525;
+}
+#foerdermitgliedschaft .block .recent-work-mixMenu ul li button:focus {
+  outline: 0;
+}
+#foerdermitgliedschaft .block .recent-work-mixMenu ul li .active {
+  color: #EEF525;
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li {
+  margin-bottom: 30px;
+  position: relative;
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li:hover .overlay {
+  opacity: 1;
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li:hover .overlay i {
+  top: 40%;
+  opacity: 1;
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li:hover .overlay h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li .overlay {
+  position: absolute;
+  top: 23px;
+  left: 38px;
+  bottom: 23px;
+  right: 38px;
+  background: rgba(128, 214, 163, 0.85);
+  transition: 0.3s;
+  text-align: center;
+  opacity: 0;
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li .overlay h3,
+#foerdermitgliedschaft .block .recent-work-pic ul li .overlay i {
+  color: #fff;
+  
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li .overlay h3 {
+  bottom: 30%;
+  left: 50%;
+  opacity: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  transition: 0.3s;
+  position: absolute;
+  transition-delay: 0.1s;
+  transform: translateX(-50%);
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li .overlay i {
+  top: 30%;
+  opacity: 0;
+  left: 50%;
+  font-size: 50px;
+  transition: 0.3s;
+  transition-delay: 0s;
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+#foerdermitgliedschaft .block .recent-work-pic ul li .overlay .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* =====================
+   Spenden
+   ===================== */
+#spenden {
+  padding: 100px 0;
+  background: #8b98a0;
+}
+#spenden .block .recent-work-mixMenu {
+  padding-bottom: 40px;
+  text-align: center;
+}
+#spenden .block .recent-work-mixMenu ul li {
+  display: inline-block;
+  padding: 0;
+}
+#spenden .block .recent-work-mixMenu ul li button {
+  background: none;
+  border: 0;
+  font-size: 15px;
+  color: #474747;
+  margin: 0 20px;
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+#spenden .block .recent-work-mixMenu ul li button:hover {
+  color: #EEF525;
+}
+#spenden .block .recent-work-mixMenu ul li button:focus {
+  outline: 0;
+}
+#spenden .block .recent-work-mixMenu ul li .active {
+  color: #EEF525;
+}
+#spenden .block .recent-work-pic ul li {
+  margin-bottom: 30px;
+  position: relative;
+}
+#spenden .block .recent-work-pic ul li:hover .overlay {
+  opacity: 1;
+}
+#spenden .block .recent-work-pic ul li:hover .overlay i {
+  top: 40%;
+  opacity: 1;
+}
+#spenden .block .recent-work-pic ul li:hover .overlay h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+#spenden .block .recent-work-pic ul li .overlay {
+  position: absolute;
+  top: 23px;
+  left: 38px;
+  bottom: 23px;
+  right: 38px;
+  background: rgba(128, 214, 163, 0.85);
+  transition: 0.3s;
+  text-align: center;
+  opacity: 0;
+}
+#spenden .block .recent-work-pic ul li .overlay h3,
+#spenden .block .recent-work-pic ul li .overlay i {
+  color: #fff;
+  
+}
+#spenden .block .recent-work-pic ul li .overlay h3 {
+  bottom: 30%;
+  left: 50%;
+  opacity: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  transition: 0.3s;
+  position: absolute;
+  transition-delay: 0.1s;
+  transform: translateX(-50%);
+}
+#spenden .block .recent-work-pic ul li .overlay i {
+  top: 30%;
+  opacity: 0;
+  left: 50%;
+  font-size: 50px;
+  transition: 0.3s;
+  transition-delay: 0s;
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+#spenden .block .recent-work-pic ul li .overlay .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* =====================
+   Sponsoren
+   ===================== */
+#sponsoren {
+  padding: 100px 0;
+}
+
+#sponsoren {
+  padding: 100px 0 100px;
+  text-align: center;
+}
+#sponsoren a {
+  padding: 14px 24px;
+  display: block;
+}
+#sponsoren a img {
+  transition: 0.3s;
+  margin: 0 auto;
+}
+#sponsoren a:hover img {
+  transform: scale(1.2);
+}
+
+/* =====================
+   mitmachen
+   ===================== */
+
+#mitmachen {
+  padding: 100px 0 0;
+}
+#mitmachen .feature-block {
+  padding-bottom: 35px;
+}
+#mitmachen .feature-block .icon-box {
+  margin-bottom: 24px;
+}
+#mitmachen .feature-block .icon-box i {
+  display: inline-block;
+  line-height: 1;
+  font-size: 60px;
+  transition: 0.3s;
+  color: #EEF525;
+}
+#mitmachen .feature-block h4 {
+  font-size: 20px;
+  color: #333;
+  position: relative;
+  text-transform: none;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+#mitmachen .feature-block p {
+  font-size: 15px;
+  color: #888;
+  line-height: 24px;
+  font-weight: 300;
+  margin-top: 20px;
+  
+}
+#mitmachen .showcase-img {
+  margin-top: 40px;
+}
+
+/* =====================
+   Sponsoren
+   ===================== */
+#sponsoren {
+  padding: 0 0 100px;
+  text-align: center;
+}
+#sponsoren a {
+  padding: 14px 24px;
+  display: block;
+}
+#sponsoren a img {
+  transition: 0.3s;
+  margin: 0 auto;
+}
+#sponsoren a:hover img {
+  transform: scale(1.2);
+}
+
+/* ================ Kontakt========================= */
+
+
+footer {
+  background: #202322;
+  padding: 42px 0 65px 0;
+  text-align: center;
+}
+footer p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  padding-top: 26px;
+}
+
+
+
+
+
+
 
 
 
