@@ -484,6 +484,7 @@ header .navbar {
 
 #vereinsgeschichte {
   padding: 100px 0;
+  background: #8b98a0;
 }
 #vereinsgeschichte .block .recent-work-mixMenu {
   padding-bottom: 40px;
@@ -634,6 +635,7 @@ header .navbar {
 }
 #philosophie {
   padding: 100px 0;
+  background: #8b98a0;
 }
 #philosophie .col {
   position: relative;
@@ -681,7 +683,7 @@ header .navbar {
   padding-top: 5px;
 }
 #philosophie .media .media-body h4 {
-  color: #444;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -689,7 +691,7 @@ header .navbar {
   font-size: 14px;
   font-family: 'Lora', serif;
   font-style: italic;
-  color: #787878;
+  color: #fff;
 }
 #team {
   padding: 100px 0 180px;
