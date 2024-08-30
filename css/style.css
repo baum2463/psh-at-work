@@ -188,11 +188,13 @@ header .navbar {
 .navbar-toggle:hover .icon-bar {
   background: #EEF525;
 }
+
 .menu a {
   color: #333;
   transition: 0.3s;
   position: relative;
   font-size: 16px;
+  padding-left: 40px; /* Einrückung hinzufügen */
 }
 .menu a:before {
   content: "";
@@ -220,6 +222,7 @@ header .navbar {
 .menu a:hover:before {
   width: 25px;
 }
+
 /* =================
    Home page style
    ================= */
@@ -305,6 +308,29 @@ header .navbar {
   -moz-animation: wiggle 0.5s linear 0s infinite alternate;
   -o-animation: wiggle 0.5s linear 0s infinite alternate;
   animation: wiggle 0.5s linear 0s infinite alternate;
+}
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  #banner {
+    padding: 150px 0;
+  }
+  #banner .block h1 {
+    font-size: 35px;
+  }
+  #banner .block h2 {
+    font-size: 16px;
+  }
+  #banner .block .btn-learn {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+  #banner .scrolldown {
+    bottom: 10%;
+  }
+  #banner .scrolldown .scroll {
+    width: 20px;
+    height: 35px;
+  }
 }
 
 #socialmedia {
@@ -483,8 +509,20 @@ header .navbar {
 }
 
 #vereinsgeschichte {
-  padding: 100px 0;
-  background: #8b98a0;
+  padding: 100px 0 127px;
+  background: rgba(241, 241, 241); /* Black with 50% transparency */
+  position: relative;
+}
+
+#vereinsgeschichte::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(238, 245, 37, 1); /* Original color */
+  z-index: -1;
 }
 #vereinsgeschichte .block .recent-work-mixMenu {
   padding-bottom: 40px;
@@ -498,7 +536,7 @@ header .navbar {
   background: none;
   border: 0;
   font-size: 15px;
-  color: #474747;
+  color: #fff;
   margin: 0 20px;
   transition: 0.2s;
   text-transform: uppercase;
@@ -633,10 +671,14 @@ header .navbar {
 #html5-watermark {
   display: none !important;
 }
+
+
 #philosophie {
-  padding: 100px 0;
-  background: #8b98a0;
+  padding: 100px 0 127px;
+  background: rgba(241, 241, 241); /* Black with 50% transparency */
+  position: relative;
 }
+
 #philosophie .col {
   position: relative;
   padding: 47px 60px;
@@ -675,7 +717,7 @@ header .navbar {
   font-family: "Ionicons";
   background: #EEF525;
   text-align: center;
-  color: #fff;
+  color: rgba(51, 51, 51);
   font-size: 13px;
   padding-top: 2px;
 }
@@ -683,7 +725,7 @@ header .navbar {
   padding-top: 5px;
 }
 #philosophie .media .media-body h4 {
-  color: #fff;
+  color: rgba(51, 51, 51);
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -691,7 +733,7 @@ header .navbar {
   font-size: 14px;
   font-family: 'Lora', serif;
   font-style: italic;
-  color: #fff;
+  color: rgba(51, 51, 51);
 }
 #team {
   padding: 100px 0 180px;
@@ -845,7 +887,7 @@ header .navbar {
 #global-header:before {
   position: absolute;
   z-index: 99;
-  background: rgba(60, 59, 72, 0.69);
+  background: rgb(115, 131, 46);
   top: 0;
   left: 0;
   right: 0;
@@ -874,80 +916,86 @@ header .navbar {
    kalender
    ===================== */
 
-   #kalender {
-    padding: 100px 0 127px;
-    background: #8b98a0;
-  }
-  #kalender .title h2,
-  #kalender .title p {
-    color: #fff;
-  }
-  #kalender .title h2:before, #kalender .title h2:after {
-    background: #fff;
-  }
-  #kalender .block {
-    color: #fff;
-  }
-  #kalender .block ul {
-    border: 1px solid #fff;
-    padding: 35px 0;
-  }
-  #kalender .block ul li {
-    padding: 10px 0;
-  }
-  #kalender .block ul li p {
-    text-transform: uppercase;
-  }
-  #kalender .block ul li:first-child {
-    margin-bottom: 26px;
-  }
-  #kalender .block ul li:first-child h4 {
-    padding-bottom: 29px;
-    font-size: 20px;
-  }
-  #kalender .block ul li:first-child p {
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 600;
-  }
-  #kalender .block ul li:first-child p span {
-    font-size: 16px;
-    font-weight: 300;
-  }
-  #kalender .block ul li:last-child {
-    color: #fff;
-    margin-top: 25px;
-  }
-  #kalender .block .btn-buy {
-    border-color: #fff;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 16px;
-    display: inline-block;
-    font-weight: 600;
-    transition: 0.3s;
-    background: #fff;
-    color: #202322;
-  }
-  
-  
-  #kalender .block .btn-buy {
-      opacity: 0;
-      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-      transition: transform 0.3s, opacity 0.3s;
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
-  }
-  #kalender .block:hover {
-    background:rgba(255, 255, 255, 0.17);
-  }
-  #kalender .block:hover .btn-buy {
-    opacity: 1;
+#kalender {
+  padding: 100px 0 127px;
+  background: rgba(241, 241, 241); /* Black with 50% transparency */
+  position: relative;
+}
+
+#kalender::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(238, 245, 37, 1); /* Original color */
+  z-index: -1;
+}
+
+#kalender .block {
+  color: rgba(51, 51, 51);
+}
+#kalender .block ul {
+  border: 1px solid rgba(51, 51, 51);
+  padding: 35px 0;
+}
+#kalender .block ul li {
+  padding: 10px 0;
+}
+#kalender .block ul li p {
+  text-transform: uppercase;
+}
+#kalender .block ul li:first-child {
+  margin-bottom: 26px;
+}
+#kalender .block ul li:first-child h4 {
+  padding-bottom: 29px;
+  font-size: 20px;
+}
+#kalender .block ul li:first-child p {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+}
+#kalender .block ul li:first-child p span {
+  font-size: 16px;
+  font-weight: 300;
+}
+#kalender .block ul li:last-child {
+  color: rgba(51, 51, 51);
+  margin-top: 25px;
+}
+#kalender .block .btn-buy {
+  border-color: rgba(51, 51, 51);
+  border-radius: 25px;
+  color: rgba(51, 51, 51);
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 600;
+  transition: 0.3s;
+  background: rgba(51, 51, 51);
+  color: #202322;
+}
+
+
+#kalender .block .btn-buy {
+    opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-      transition: transform 0.3s, opacity 0.3s;
-      -webkit-transform: translate3d(0, 0px, 0);
-      transform: translate3d(0, 0px, 0);
-  }
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+}
+#kalender .block:hover {
+  background:rgba(255, 255, 255, 0.17);
+}
+#kalender .block:hover .btn-buy {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+}
 
 /* =====================
    Blog Post
@@ -1517,8 +1565,20 @@ header .navbar {
    Spenden
    ===================== */
 #spenden {
-  padding: 100px 0;
-  background: #8b98a0;
+  padding: 100px 0 127px;
+  background: rgba(241, 241, 241); /* Black with 50% transparency */
+  position: relative;
+}
+
+#spenden::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(238, 245, 37, 1); /* Original color */
+  z-index: -1;
 }
 #spenden .block .recent-work-mixMenu {
   padding-bottom: 40px;
@@ -1692,7 +1752,7 @@ header .navbar {
 
 
 footer {
-  background: #202322;
+  background: rgb(41, 44, 28);
   padding: 42px 0 65px 0;
   text-align: center;
 }
