@@ -373,6 +373,27 @@ header .navbar {
 #features .showcase-img {
   margin-top: 40px;
 }
+
+/* #features button {
+  float: center;
+  color: #000000;
+  font-size: 16px;
+  padding: 5px 43px;
+  background: #ffffff;
+  border-radius: 40px;
+  font-weight: 600;
+  border-color: #000000;
+  transition: 0.3s;
+}
+#features button:hover {
+  background: none;
+  color: #EEF525;
+  border-color: #EEF525;
+} */
+
+
+
+
 #counter {
   background: url(../img/beach.jpg) no-repeat;
   background-size: cover;
@@ -421,93 +442,56 @@ header .navbar {
   padding-top: 20px;
 }
 #leitbild {
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
-#leitbild .block .recent-work-mixMenu {
-  padding-bottom: 40px;
-  text-align: center;
+#leitbild .feature-block {
+  padding-bottom: 35px;
 }
-#leitbild .block .recent-work-mixMenu ul li {
+#leitbild .feature-block .icon-box {
+  margin-bottom: 24px;
+}
+#leitbild .feature-block .icon-box i {
   display: inline-block;
-  padding: 0;
-}
-#leitbild .block .recent-work-mixMenu ul li button {
-  background: none;
-  border: 0;
-  font-size: 15px;
-  color: #474747;
-  margin: 0 20px;
-  transition: 0.2s;
-  text-transform: uppercase;
-}
-#leitbild .block .recent-work-mixMenu ul li button:hover {
+  line-height: 1;
+  font-size: 60px;
+  transition: 0.3s;
   color: #EEF525;
 }
-#leitbild .block .recent-work-mixMenu ul li button:focus {
-  outline: 0;
-}
-#leitbild .block .recent-work-mixMenu ul li .active {
-  color: #EEF525;
-}
-#leitbild .block .recent-work-pic ul li {
-  margin-bottom: 30px;
+#leitbild .feature-block h4 {
+  font-size: 20px;
+  color: #333;
   position: relative;
-}
-#leitbild .block .recent-work-pic ul li:hover .overlay {
-  opacity: 1;
-}
-#leitbild .block .recent-work-pic ul li:hover .overlay i {
-  top: 40%;
-  opacity: 1;
-}
-#leitbild .block .recent-work-pic ul li:hover .overlay h3 {
-  bottom: 50%;
-  opacity: 1;
-}
-#leitbild .block .recent-work-pic ul li .overlay {
-  position: absolute;
-  top: 23px;
-  left: 38px;
-  bottom: 23px;
-  right: 38px;
-  background: rgba(128, 214, 163, 0.85);
-  transition: 0.3s;
-  text-align: center;
-  opacity: 0;
-}
-#leitbild .block .recent-work-pic ul li .overlay h3,
-#leitbild .block .recent-work-pic ul li .overlay i {
-  color: #fff;
-  
-}
-#leitbild .block .recent-work-pic ul li .overlay h3 {
-  bottom: 30%;
-  left: 50%;
-  opacity: 0;
-  text-transform: uppercase;
+  text-transform: none;
+  margin-bottom: 10px;
   font-weight: 400;
-  width: 100%;
+}
+#leitbild .feature-block p {
+  font-size: 15px;
+  color: #888;
+  line-height: 24px;
+  font-weight: 300;
+  margin-top: 20px;  
+}
+#leitbild .showcase-img {
+  margin-top: 40px;
+}
+
+/* #leitbild button {
+  float: center;
+  color: #000000;
+  font-size: 16px;
+  padding: 5px 43px;
+  background: #ffffff;
+  border-radius: 40px;
+  font-weight: 600;
+  border-color: #000000;
   transition: 0.3s;
-  position: absolute;
-  transition-delay: 0.1s;
-  transform: translateX(-50%);
 }
-#leitbild .block .recent-work-pic ul li .overlay i {
-  top: 30%;
-  opacity: 0;
-  left: 50%;
-  font-size: 50px;
-  transition: 0.3s;
-  transition-delay: 0s;
-  position: absolute;
-  transform: translate(-50%, 50%);
-}
-#leitbild .block .recent-work-pic ul li .overlay .overlay-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+#leitbild button:hover {
+  background: none;
+  color: #EEF525;
+  border-color: #EEF525;
+} */
 
 #vereinsgeschichte {
   padding: 100px 0 127px;
@@ -1729,8 +1713,7 @@ header .navbar {
 #mitmachen .showcase-img {
   margin-top: 40px;
 }
-
-/* =====================
+=====================
    Sponsoren
    ===================== */
 #sponsoren {
