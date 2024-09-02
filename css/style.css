@@ -255,7 +255,7 @@ header .navbar {
   color: #EEF525;
 }
 #banner .block h2 {
-  font-size: 18px;
+  font-size: 30px;
   line-height: 30px;
   font-weight: 300;
 }
@@ -322,8 +322,10 @@ header .navbar {
     font-size: 16px;
   }
   #banner .block .btn-learn {
-    padding: 8px 18px;
-    font-size: 12px;
+      padding: 8px 18px; /* default was 18 */
+      font-size: 12px;
+      display: inline;
+      align-items: center;
   }
   #banner .scrolldown {
     bottom: 10%;
@@ -802,6 +804,7 @@ header .navbar {
   color: #EEF525;
 }
 
+
 #contact-form {
   padding: 100px 0;
   background:rgba(241, 241, 241);
@@ -825,7 +828,7 @@ header .navbar {
   resize: none;
 }
 #contact-form form button {
-  float: right;
+  float: left;
   color: #000000;
   font-size: 16px;
   padding: 17px 43px;
@@ -840,6 +843,8 @@ header .navbar {
   color: #000000;
   border-color: #EEF525;
 }
+
+
 #footer-top iframe {
   width: 100%;
   height: 385px;
@@ -1674,6 +1679,7 @@ header .navbar {
   transform: scale(1.2);
 }
 
+
 /* =====================
    mitmachen
    ===================== */
@@ -1713,25 +1719,6 @@ header .navbar {
 #mitmachen .showcase-img {
   margin-top: 40px;
 }
-=====================
-   Sponsoren
-   ===================== */
-#sponsoren {
-  padding: 0 0 100px;
-  text-align: center;
-}
-#sponsoren a {
-  padding: 14px 24px;
-  display: block;
-}
-#sponsoren a img {
-  transition: 0.3s;
-  margin: 0 auto;
-}
-#sponsoren a:hover img {
-  transform: scale(1.2);
-}
-
 /* ================ Kontakt========================= */
 
 
