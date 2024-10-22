@@ -1464,6 +1464,8 @@ header .navbar {
    ===================== */
 #foerdermitgliedschaft {
   padding: 100px 0;
+  background: rgba(241, 241, 241); /* Black with 50% transparency */
+  position: relative;
 }
 #foerdermitgliedschaft .block .recent-work-mixMenu {
   padding-bottom: 40px;
@@ -1556,8 +1558,7 @@ header .navbar {
    ===================== */
 #spenden {
   padding: 100px 0 127px;
-  background: rgba(241, 241, 241); /* Black with 50% transparency */
-  position: relative;
+
 }
 
 #spenden::before {
@@ -1661,6 +1662,8 @@ header .navbar {
    ===================== */
 #unterstuetzer {
   padding: 100px 0;
+  background: rgba(241, 241, 241); /* Black with 50% transparency */
+  position: relative;
 }
 
 #unterstuetzer {
@@ -1686,6 +1689,8 @@ header .navbar {
 
 #mitmachen {
   padding: 100px 0 0;
+  background: rgb(255, 255, 255);
+  position: relative;
 }
 #mitmachen .feature-block {
   padding-bottom: 35px;
