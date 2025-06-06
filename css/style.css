@@ -259,6 +259,13 @@ header .navbar {
   line-height: 30px;
   font-weight: 300;
 }
+
+#banner .block h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
 #banner .block .btn-learn {
   border: 1px solid #fff;
   color: #fff;
